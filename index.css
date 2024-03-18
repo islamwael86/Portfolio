@@ -1,0 +1,134 @@
+
+:root {
+    --lightBlue: cornflowerblue;
+    --darkBlue: midnightblue;
+    --hoverBlue: cyan;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-landingPage {
+    background-image: url("../Portfolio/img/146953.jpg");
+}
+
+.about {
+    background-image: url("./img/26-263858_office-desk-with-window-view.jpg");
+}
+
+.products {
+    background-image: url("./img/office_work_interior_80538_1920x1080.jpg");
+}
+
+.products div {
+    display: flex;
+    flex-direction: column;
+}
+
+.products div a {
+    width:fit-content;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: var(--lightBlue);
+}
+
+.products div a:hover {
+    color: var(--hoverBlue);
+    transition: 0.5s;
+}
+
+.contact {
+    background-image: url("./img/517269.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a {
+    width:fit-content;
+    font-size: 25px;
+    color:var(--lightBlue);
+    text-decoration: none;
+    padding-left: 10%;
+    padding-bottom: 6%;
+}
+
+.main-landingPage,
+.about,
+.products,
+.contact {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 755px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+}
+
+li {
+    color:var(--lightBlue);
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover,
+.contact a:hover {
+    color:var(--hoverBlue);
+    transition: 0.5s;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+    color: var(--darkBlue);
+}
+
+footer {
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top: 330px;
+}
+
+.fa-facebook,
+.fa-square-x-twitter,
+.fa-linkedin,
+.fa-telegram {
+    font-size: 25px;
+    margin-right: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-square-x-twitter {
+    color: #1da1f2;
+}
+
+.fa-linkedin {
+    color: #0a66c2;
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
